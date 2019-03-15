@@ -1,5 +1,5 @@
 {
-    "name": "smallhomelab/lucene-query-parser",
+    "name": "catch/lucene-query-parser",
     "type": "library",
     "description": "Basic Lucene Query Parser for Search and Filter",
     "autoload": {
