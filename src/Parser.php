@@ -209,7 +209,7 @@ class Parser
 
     protected function getTokenType(&$value)
     {
-        $type = self::T_GENERIC_SYMBOL;
+        $type = self::T_WORD;
 
         switch (true) {
             case (trim($value) === ''):
@@ -250,9 +250,6 @@ class Parser
 
             case strtolower($value) == 'to':
                 return self::T_RANGE_TO;
-
-            case (ctype_alpha($value[0])):
-                return self::T_WORD;
 
         }
         return $type;
